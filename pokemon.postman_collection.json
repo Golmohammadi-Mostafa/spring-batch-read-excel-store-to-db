@@ -1,0 +1,49 @@
+{
+	"info": {
+		"_postman_id": "eddf5d99-fa5e-4646-822e-89d65ae17871",
+		"name": "pokemon",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/api/v1/pokemons?page=0&searchFilter=hp=ge=100;defense=le=200&size=20",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "*/*"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/pokemons?page=0&searchFilter=hp=ge=100;defense=le=200&size=20",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"pokemons"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "0"
+						},
+						{
+							"key": "searchFilter",
+							"value": "hp=ge=100;defense=le=200"
+						},
+						{
+							"key": "size",
+							"value": "20"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
